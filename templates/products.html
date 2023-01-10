@@ -1,0 +1,33 @@
+ {% extends 'base.html'%} {% block products %}
+<!-- prodcuts section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> ALL <span>products</span> </h1>
+
+    <div class="box-container">
+        {%for product in products%}
+        <div class="box">
+
+            <span class="discount">-{{product[4] * 100}}%</span>
+            <div class="image">
+                <img src="{{ url_for('static',filename = 'images/img-'+product[0]+'.jpg')}}" alt="">
+                <div class="icons">
+                    <a href="/liked/{{product[0]}}" class="fas fa-heart"></a>
+                    <a href="/add/{{product[0]}}" class="cart-btn ">add to cart</a>
+                    <a href="" class="fas fa-share "></a>
+                </div>
+            </div>
+            <div class="content ">
+                <h3>{{product[1]}}</h3>
+                <div class="price "> ${{ product[3]//1 }} <span>${{product[2]}}</span> </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</section>
+
+<!-- prodcuts section ends -->
+
+{% endblock %}

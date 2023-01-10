@@ -1,0 +1,32 @@
+{% extends 'base.html'%}{% block card %}
+<section class="card" id="card">
+    <h1 class="heading"> Product<span> Card</span> </h1>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Product Type</th>
+                <th scope="col">Price</th>
+                <th scope="col">Date</th>
+                <th scope="col">Buy</th>
+                <th scope="col">Cancel</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for e in items%}
+            <tr>
+                <th scope="row">{{e[0]}}</th>
+                <td>{{e[1]}}</td>
+                <td>{{e[2]}}</td>
+                <td>{{e[3]}}</td>
+                <td><a href="#" class="btn" id="payment-btn">Buy Now</a></td>
+                <td>
+                    <a href="cancel/{{e[0]}}" class=" btn ">Cancel</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+</section>
+{% endblock%}

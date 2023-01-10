@@ -1,0 +1,99 @@
+{% extends 'base.html'%} {% block about %}
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span> about </span> us </h1>
+
+    <div class="row">
+
+        <div class="video-container">
+            <video src="{{ url_for('static',filename = 'images/about-vid.mp4')}}" controls loop autoplay muted></video>
+            <h3>Syntec is what's best</h3>
+        </div>
+
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo pariatur corporis perspiciatis aspernatur a ullam repudiandae autem asperiores quibusdam omnis commodi alias repellat illum, unde optio temporibus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ea est commodi incidunt magni quia molestias perspiciatis, unde repudiandae quidem.</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- icons section starts  -->
+
+<section class="icons-container">
+
+    <div class="icons">
+        <img src="{{ url_for('static',filename = 'images/icon-1.png')}}" alt="">
+        <div class="info">
+            <h3>free delivery</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="{{ url_for('static',filename = 'images/icon-2.png')}}" alt="">
+        <div class="info">
+            <h3>10 days returns</h3>
+            <span>moneyback guarantee</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="{{ url_for('static',filename = 'images/icon-3.png')}}" alt="">
+        <div class="info">
+            <h3>offer & gifts</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="{{ url_for('static',filename = 'images/icon-4.png')}}" alt="">
+        <div class="info">
+            <h3>secure paymens</h3>
+            <span>protected by paypal</span>
+        </div>
+    </div>
+    <div class="icons">
+        <img src="{{ url_for('static',filename = 'images/icon-5.png')}}" alt="">
+        <div class="info">
+            <h3>Best quality</h3>
+            <span>durable and strong products</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="{{ url_for('static',filename = 'images/icon-6.png')}}" alt="">
+        <div class="info">
+            <h3>Fast delivery</h3>
+            <span>receive in no time</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="{{ url_for('static',filename = 'images/icon-7.png')}}" alt="">
+        <div class="info">
+            <h3>Best prices</h3>
+            <span>discounts within every month</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="{{ url_for('static',filename = 'images/icon-8.png')}}" alt="">
+        <div class="info">
+            <h3>Best choice</h3>
+            <span>we are the best</span>
+        </div>
+    </div>
+
+
+</section>
+
+<!-- icons section ends -->
+{% endblock %}

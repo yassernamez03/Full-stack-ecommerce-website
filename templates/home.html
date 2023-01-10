@@ -1,0 +1,366 @@
+{% extends 'base.html'%} {% block home %}
+<!-- home section starts  -->
+<link rel="stylesheet" href="{{ url_for('static',filename = 'css/home_st.css')}}">
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>votre partenaire en solutions d'isolation</h3>
+        <span> Les meilleure panneaux sandwich </span>
+        <p></p>
+        <a href="#" class="btn">shop now</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span> about </span> us </h1>
+
+    <div class="row">
+
+        <div class="video-container">
+            <video src="{{ url_for('static',filename = 'images/about-vid.mp4')}}" loop autoplay muted></video>
+            <h3>Syntec is what's best</h3>
+        </div>
+
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p>Les panneaux sandwich ISOPANO figurent parmi les composants les plus efficaces et les plus esthétiques utilisés pour une construction modulaire rapide, s’adaptant aussi bien aux bâtiments neufs qu’à la rénovation de maisons particulières et
+                autres bâtiments publics et industriels. Il existe 4 types de panneaux sandwich</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ea est commodi incidunt magni quia molestias perspiciatis, unde repudiandae quidem.</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- icons section starts  -->
+
+<section class="icons-container">
+
+    <div class="icons">
+        <img src="{{ url_for('static',filename = 'images/icon-1.png')}}" alt="">
+        <div class="info">
+            <h3>free delivery</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="{{ url_for('static',filename = 'images/icon-2.png')}}" alt="">
+        <div class="info">
+            <h3>10 days returns</h3>
+            <span>moneyback guarantee</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="{{ url_for('static',filename = 'images/icon-3.png')}}" alt="">
+        <div class="info">
+            <h3>offer & gifts</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="{{ url_for('static',filename = 'images/icon-4.png')}}" alt="">
+        <div class="info">
+            <h3>secure paymens</h3>
+            <span>protected by paypal</span>
+        </div>
+    </div>
+    <div class="icons">
+        <img src="{{ url_for('static',filename = 'images/icon-5.png')}}" alt="">
+        <div class="info">
+            <h3>Best quality</h3>
+            <span>durable and strong products</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="{{ url_for('static',filename = 'images/icon-6.png')}}" alt="">
+        <div class="info">
+            <h3>Fast delivery</h3>
+            <span>receive in no time</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="{{ url_for('static',filename = 'images/icon-7.png')}}" alt="">
+        <div class="info">
+            <h3>Best prices</h3>
+            <span>discounts within every month</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="{{ url_for('static',filename = 'images/icon-8.png')}}" alt="">
+        <div class="info">
+            <h3>Best choice</h3>
+            <span>we are the best</span>
+        </div>
+    </div>
+
+
+</section>
+
+<!-- icons section ends -->
+
+<!-- prodcuts section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> latest <span>products</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="{{ url_for('static',filename = 'images/img-1.jpg')}}" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Accessoires bâtiment</h3>
+                <div class="price"> $129.99 <span>$150.99</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-15%</span>
+            <div class="image">
+                <img src="{{ url_for('static',filename='images/img-2.jpg')}}" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Accessoires chambre froide</h3>
+                <div class="price"> $129.99 <span>$150.99</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-5%</span>
+            <div class="image">
+                <img src="{{ url_for('static',filename='images/img-3.jpg')}}" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Chambres Froides en kit</h3>
+                <div class="price"> $129.99 <span>$150.99</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-20%</span>
+            <div class="image">
+                <img src="{{ url_for('static',filename='images/img-4.jpg')}}" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Panneaux sandwich</h3>
+                <div class="price"> $129.99 <span>$150.99</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-17%</span>
+            <div class="image">
+                <img src="{{ url_for('static',filename='images/img-5.jpg')}}" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Panneaux sandwich</h3>
+                <div class="price"> $129.99 <span>$150.99</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-3%</span>
+            <div class="image">
+                <img src="{{ url_for('static',filename='images/img-6.jpg')}}" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Panneaux alvéolaires</h3>
+                <div class="price"> $129.99 <span>$150.99</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-18%</span>
+            <div class="image">
+                <img src="{{ url_for('static',filename='images/img-7.jpg')}}" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Portes isothermes</h3>
+                <div class="price"> $129.99 <span>$150.99</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="{{ url_for('static',filename='images/img-8.jpg')}}" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Tôles profilées</h3>
+                <div class="price"> $129.99 <span>$150.99</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-5%</span>
+            <div class="image">
+                <img src="{{ url_for('static',filename='images/img-9.jpg')}}" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Panneaux sandwich</h3>
+                <div class="price"> $129.99 <span>$150.99</span> </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading"> customer's <span>review</span> </h1>
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="{{ url_for('static',filename='images/pic-1.png')}}" alt="">
+                <h3>bot</h3>
+                <p>heard about this on powerviolence radio, decided to give it a try. My neighbor Isabela has one of these. She works as a taxidermist and she says it looks monochromatic. It only works when I'm Argentina. talk about shame.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{{ url_for('static',filename='images/pic-2.png')}}" alt="">
+                <h3>bot</h3>
+                <p>My neighbor Aldona has one of these. She works as a butler and she says it looks humongous. The box this comes in is 5 foot by 6 inch and weights 17 pound!!! The box this comes in is 3 kilometer by 5 inch and weights 13 ton.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{{ url_for('static',filename='images/pic-3.png')}}" alt="">
+                <h3>bot</h3>
+                <p>The box this comes in is 3 yard by 6 yard and weights 19 pound!!! The box this comes in is 3 yard by 6 light-year and weights 15 gram!!! My terrier loves to play with it. i use it never again when i'm in my station.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="{{ url_for('static',filename='images/pic-4.png')}}" alt="">
+                <h3>bot</h3>
+                <p>The box this comes in is 3 yard by 6 yard and weights 19 pound!!! The box this comes in is 3 yard by 6 light-year and weights 15 gram!!! My terrier loves to play with it. i use it never again when i'm in my station.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{{ url_for('static',filename='images/pic-5.png')}}" alt="">
+                <h3>bot</h3>
+                <p>The box this comes in is 3 yard by 6 yard and weights 19 pound!!! The box this comes in is 3 yard by 6 light-year and weights 15 gram!!! My terrier loves to play with it. i use it never again when i'm in my station.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="{{ url_for('static',filename='images/pic-6.png')}}" alt="">
+                <h3>bot</h3>
+                <p>The box this comes in is 3 yard by 6 yard and weights 19 pound!!! The box this comes in is 3 yard by 6 light-year and weights 15 gram!!! My terrier loves to play with it. i use it never again when i'm in my station.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- prodcuts section ends -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="{{ url_for('static',filename='js/script2.js')}}"></script>
+{% endblock %}
